@@ -1,0 +1,71 @@
+\doxysection{com.\+assign1.\+orientationclassifier.\+KNNClassifier Class Reference}
+\hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier}{}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier}\index{com.assign1.orientationclassifier.KNNClassifier@{com.assign1.orientationclassifier.KNNClassifier}}
+
+
+This is the second Classifier, using majority vote.  
+
+
+Inheritance diagram for com.\+assign1.\+orientationclassifier.\+KNNClassifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_ae289b6c7fa43645416304a510e8b1af1}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_ae289b6c7fa43645416304a510e8b1af1} 
+{\bfseries KNNClassifier} (List$<$ String\mbox{[}$\,$\mbox{]}$>$ training\+Data, int k)
+\item 
+String \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_ab3506e4bfbaca5d7b4287f8a3a39bce5}{predict}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Overrides the predict function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{com.\+assign1.\+orientationclassifier.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Classifier} (List$<$ String\mbox{[}$\,$\mbox{]}$>$ training\+Data)
+\begin{DoxyCompactList}\small\item\em The training data all Classifiers will train off of. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_a85a72a79c5f3cf6b236c764bf9cf95a3}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_a85a72a79c5f3cf6b236c764bf9cf95a3} 
+static void {\bfseries main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{com.\+assign1.\+orientationclassifier.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a4d586c1b75635d492f6066abbc3ebe94}{calculate\+Distance}} (double x1, double y1, double z1, double x2, double y2, double z2)
+\begin{DoxyCompactList}\small\item\em This function will calculate the Euclidean distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{com.\+assign1.\+orientationclassifier.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ String\mbox{[}$\,$\mbox{]}$>$ {\bfseries training\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the second Classifier, using majority vote. 
+
+Using the majority vote, instead looks for points within a range Predicting based off the amount data found within the range 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_ab3506e4bfbaca5d7b4287f8a3a39bce5}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_ab3506e4bfbaca5d7b4287f8a3a39bce5} 
+\index{com.assign1.orientationclassifier.KNNClassifier@{com.assign1.orientationclassifier.KNNClassifier}!predict@{predict}}
+\index{predict@{predict}!com.assign1.orientationclassifier.KNNClassifier@{com.assign1.orientationclassifier.KNNClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily String com.\+assign1.\+orientationclassifier.\+KNNClassifier.\+predict (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Overrides the predict function. 
+
+Looks for the most frequent orientation in comparison to the data given ~\newline
+ 
+
+Reimplemented from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_ae434a96cb2dd0060e47225a619604ae7}{com.\+assign1.\+orientationclassifier.\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Witlr/git/\+Phone\+Orientation\+Classifier/src/com/assign1/orientationclassifier/KNNClassifier.\+java\end{DoxyCompactItemize}

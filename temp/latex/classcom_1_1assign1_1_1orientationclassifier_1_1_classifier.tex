@@ -1,0 +1,68 @@
+\doxysection{com.\+assign1.\+orientationclassifier.\+Classifier Class Reference}
+\hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}\index{com.assign1.orientationclassifier.Classifier@{com.assign1.orientationclassifier.Classifier}}
+
+
+This is the base for the other Classifiers, given the function to detect the distance.  
+
+
+Inheritance diagram for com.\+assign1.\+orientationclassifier.\+Classifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.220044cm]{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a8b433b6c238a24281954e99ac3d66997}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a8b433b6c238a24281954e99ac3d66997} 
+{\bfseries Classifier} (List$<$ String\mbox{[}$\,$\mbox{]}$>$ training\+Data)
+\begin{DoxyCompactList}\small\item\em The training data all Classifiers will train off of. \end{DoxyCompactList}\item 
+abstract String \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_ae434a96cb2dd0060e47225a619604ae7}{predict}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Abstract method to be implemented by NN and KNN classifiers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a4d586c1b75635d492f6066abbc3ebe94}{calculate\+Distance}} (double x1, double y1, double z1, double x2, double y2, double z2)
+\begin{DoxyCompactList}\small\item\em This function will calculate the Euclidean distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a5b309112094db9407edebd1ca1b6d305}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a5b309112094db9407edebd1ca1b6d305} 
+List$<$ String\mbox{[}$\,$\mbox{]}$>$ {\bfseries training\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the base for the other Classifiers, given the function to detect the distance. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a4d586c1b75635d492f6066abbc3ebe94}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a4d586c1b75635d492f6066abbc3ebe94} 
+\index{com.assign1.orientationclassifier.Classifier@{com.assign1.orientationclassifier.Classifier}!calculateDistance@{calculateDistance}}
+\index{calculateDistance@{calculateDistance}!com.assign1.orientationclassifier.Classifier@{com.assign1.orientationclassifier.Classifier}}
+\doxysubsubsection{\texorpdfstring{calculateDistance()}{calculateDistance()}}
+{\footnotesize\ttfamily double com.\+assign1.\+orientationclassifier.\+Classifier.\+calculate\+Distance (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{z1,  }\item[{double}]{x2,  }\item[{double}]{y2,  }\item[{double}]{z2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+This function will calculate the Euclidean distance. 
+
+Using Math.\+sqrt getting the square root of the square of the distances between the two points ~\newline
+ \Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_ae434a96cb2dd0060e47225a619604ae7}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_ae434a96cb2dd0060e47225a619604ae7} 
+\index{com.assign1.orientationclassifier.Classifier@{com.assign1.orientationclassifier.Classifier}!predict@{predict}}
+\index{predict@{predict}!com.assign1.orientationclassifier.Classifier@{com.assign1.orientationclassifier.Classifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily abstract String com.\+assign1.\+orientationclassifier.\+Classifier.\+predict (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Abstract method to be implemented by NN and KNN classifiers. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_another_classifier_a6ce14e3fe04a014756f8ec3ed5a240f0}{com.\+assign1.\+orientationclassifier.\+Another\+Classifier}}, \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_k_n_n_classifier_ab3506e4bfbaca5d7b4287f8a3a39bce5}{com.\+assign1.\+orientationclassifier.\+KNNClassifier}}, and \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_ab3800963f9fbad6e5aa54129dee0b46d}{com.\+assign1.\+orientationclassifier.\+NNClassifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Witlr/git/\+Phone\+Orientation\+Classifier/src/com/assign1/orientationclassifier/Classifier.\+java\end{DoxyCompactItemize}

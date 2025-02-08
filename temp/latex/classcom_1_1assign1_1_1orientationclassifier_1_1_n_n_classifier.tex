@@ -1,0 +1,79 @@
+\doxysection{com.\+assign1.\+orientationclassifier.\+NNClassifier Class Reference}
+\hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier}{}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier}\index{com.assign1.orientationclassifier.NNClassifier@{com.assign1.orientationclassifier.NNClassifier}}
+
+
+This is the main classifier This uses the nearest neighbor technique to compare data to past tests Predicting the orientation based off that data ~\newline
+  
+
+
+Inheritance diagram for com.\+assign1.\+orientationclassifier.\+NNClassifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_a22dc929b44b5aa0fe622bf9e02c634aa}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_a22dc929b44b5aa0fe622bf9e02c634aa} 
+{\bfseries NNClassifier} (List$<$ String\mbox{[}$\,$\mbox{]}$>$ training\+Data)
+\item 
+String \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_ab3800963f9fbad6e5aa54129dee0b46d}{predict}} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Uses the training data to compare to what is needed to detect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{com.\+assign1.\+orientationclassifier.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Classifier} (List$<$ String\mbox{[}$\,$\mbox{]}$>$ training\+Data)
+\begin{DoxyCompactList}\small\item\em The training data all Classifiers will train off of. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_a43790408532c93671aca8f2ae4916a50}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em This is the main classifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{com.\+assign1.\+orientationclassifier.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_a4d586c1b75635d492f6066abbc3ebe94}{calculate\+Distance}} (double x1, double y1, double z1, double x2, double y2, double z2)
+\begin{DoxyCompactList}\small\item\em This function will calculate the Euclidean distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier}{com.\+assign1.\+orientationclassifier.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ String\mbox{[}$\,$\mbox{]}$>$ {\bfseries training\+Data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main classifier This uses the nearest neighbor technique to compare data to past tests Predicting the orientation based off that data ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_a43790408532c93671aca8f2ae4916a50}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_a43790408532c93671aca8f2ae4916a50} 
+\index{com.assign1.orientationclassifier.NNClassifier@{com.assign1.orientationclassifier.NNClassifier}!main@{main}}
+\index{main@{main}!com.assign1.orientationclassifier.NNClassifier@{com.assign1.orientationclassifier.NNClassifier}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void com.\+assign1.\+orientationclassifier.\+NNClassifier.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This is the main classifier. 
+
+This reads the data from training data shows a quick test on how the program will work \Hypertarget{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_ab3800963f9fbad6e5aa54129dee0b46d}\label{classcom_1_1assign1_1_1orientationclassifier_1_1_n_n_classifier_ab3800963f9fbad6e5aa54129dee0b46d} 
+\index{com.assign1.orientationclassifier.NNClassifier@{com.assign1.orientationclassifier.NNClassifier}!predict@{predict}}
+\index{predict@{predict}!com.assign1.orientationclassifier.NNClassifier@{com.assign1.orientationclassifier.NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily String com.\+assign1.\+orientationclassifier.\+NNClassifier.\+predict (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})}
+
+
+
+Uses the training data to compare to what is needed to detect. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classcom_1_1assign1_1_1orientationclassifier_1_1_classifier_ae434a96cb2dd0060e47225a619604ae7}{com.\+assign1.\+orientationclassifier.\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Witlr/git/\+Phone\+Orientation\+Classifier/src/com/assign1/orientationclassifier/NNClassifier.\+java\end{DoxyCompactItemize}
