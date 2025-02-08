@@ -1,30 +1,29 @@
 package com.assign1.orientationclassifier;
 
 public enum PhoneOrientation {
-    FACE_UP,
-    FACE_DOWN,
-    PORTRAIT_UP,
-    PORTRAIT_DOWN,
-    LANDSCAPE_LEFT,
-    LANDSCAPE_RIGHT,
-    UNKNOWN;
+    FACE_UP(1),
+    FACE_DOWN(2),
+    PORTRAIT_UP(3),
+    PORTRAIT_DOWN(4),
+    LANDSCAPE_LEFT(5),
+    LANDSCAPE_RIGHT(6),
+    UNKNOWN(0);
 
-    public static PhoneOrientation fromString(String label) {
-        switch (label.toLowerCase()) {
-            case "face up":
-                return FACE_UP;
-            case "face down":
-                return FACE_DOWN;
-            case "portrait up":
-                return PORTRAIT_UP;
-            case "portrait down":
-                return PORTRAIT_DOWN;
-            case "landscape left":
-                return LANDSCAPE_LEFT;
-            case "landscape right":
-                return LANDSCAPE_RIGHT;
-            default:
-                return UNKNOWN;
+    private final int label;
+
+    PhoneOrientation(int label) {
+        this.label = label;
+    }
+
+    public static PhoneOrientation fromLabel(int label) {
+        switch (label) {
+            case 1: return FACE_UP;
+            case 2: return FACE_DOWN;
+            case 3: return PORTRAIT_UP;
+            case 4: return PORTRAIT_DOWN;
+            case 5: return LANDSCAPE_LEFT;
+            case 6: return LANDSCAPE_RIGHT;
+            default: return UNKNOWN;
         }
     }
 }
